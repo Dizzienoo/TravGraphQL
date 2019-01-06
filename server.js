@@ -9,4 +9,5 @@ app.use(`/graphql`, expressGraphQL({
 	graphiql: true
 }));
 
-app.listen(4000, () => {console.log(`Server Running`);});
+let port = 4000;
+app.listen(port, () => {console.log(`Server Running on ${port}`);});
